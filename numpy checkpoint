@@ -1,0 +1,417 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a0272091-7a7e-4fe1-8fd1-0027177eca2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([85, 90, 88, 92, 95, 80, 75, 98, 89, 83])"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Import numpy\n",
+    "import numpy as np\n",
+    "\n",
+    "#  Create the \"grades\" array\n",
+    "grades = np.array([85, 90, 88, 92, 95, 80, 75, 98, 89, 83])\n",
+    "grades"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "301b0edd-6ec6-4e6a-91bc-edc800b46cc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "87.5"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Calculate mean, median, and standard deviation\n",
+    "mean_grade = np.mean(grades)\n",
+    "mean_grade"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "14b03f5d-9146-4912-b895-b5dfbce5f10d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "88.5"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "median_grade = np.median(grades)\n",
+    "median_grade"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "ed01345c-03af-4396-b622-641888fa5e4e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6.591661399070799"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "std_deviation = np.std(grades)\n",
+    "std_deviation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1849fae9-a1d1-4d74-addf-58bb051e351a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "98"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Find maximum and minimum grades\n",
+    "max_grade = np.max(grades)\n",
+    "max_grade"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "df5ca269-e706-48b5-b657-6cfb24b70ba5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "75"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "min_grade = np.min(grades)\n",
+    "min_grade"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "5b098015-4bf4-4bac-8670-da9860b9a14d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([75, 80, 83, 85, 88, 89, 90, 92, 95, 98])"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Sort the grades in ascending order\n",
+    "sorted_grades = np.sort(grades)\n",
+    "sorted_grades"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "9983c7ce-0e41-4384-923a-b4de1741d9e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Find the index of the highest grade\n",
+    "index_highest = np.argmax(grades)\n",
+    "index_highest"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "7a6d18e4-bd7c-4b24-8007-79189d48a5e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Count the number of students who scored above 90\n",
+    "count_above_90 = np.sum(grades > 90)\n",
+    "count_above_90"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "554a7dd6-0593-42e0-92b4-5de8aa0d7780",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30.0"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Calculate the percentage of students who scored above 90\n",
+    "percentage_above_90 = np.mean(grades > 90) * 100\n",
+    "percentage_above_90"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "7a6742b1-59b5-474c-9b58-56bd42adf4a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.0"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Calculate the percentage of students who scored below 75\n",
+    "percentage_below_75 = np.mean(grades < 75) * 100\n",
+    "percentage_below_75"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "6cc5b1a7-ed47-42d9-a9d5-449e4a77faad",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([92, 95, 98])"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Extract all grades above 90 into \"high_performers\"\n",
+    "high_performers = grades[grades > 90]\n",
+    "high_performers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "9100cc0f-ffdb-4bee-8b44-f7d47f61a59a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([85, 90, 88, 92, 95, 80, 98, 89, 83])"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#  Create \"passing_grades\" array with grades above 75\n",
+    "passing_grades = grades[grades > 75]\n",
+    "passing_grades"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "5d58a9c1-2f27-41b7-94fe-36e023618057",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Grades array: [85 90 88 92 95 80 75 98 89 83]\n",
+      "Mean grade: 87.5\n",
+      "Median grade: 88.5\n",
+      "Standard deviation: 6.591661399070799\n",
+      "Maximum grade: 98\n",
+      "Minimum grade: 75\n",
+      "Sorted grades: [75 80 83 85 88 89 90 92 95 98]\n",
+      "Index of the highest grade: 7\n",
+      "Count of students scoring above 90: 3\n",
+      "Percentage of students scoring above 90: 30.0 %\n",
+      "Percentage of students scoring below 75: 0.0 %\n",
+      "High performers (grades > 90): [92 95 98]\n",
+      "Passing grades (grades > 75): [85 90 88 92 95 80 98 89 83]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Print all results\n",
+    "print(\"Grades array:\", grades)\n",
+    "print(\"Mean grade:\", mean_grade)\n",
+    "print(\"Median grade:\", median_grade)\n",
+    "print(\"Standard deviation:\", std_deviation)\n",
+    "print(\"Maximum grade:\", max_grade)\n",
+    "print(\"Minimum grade:\", min_grade)\n",
+    "print(\"Sorted grades:\", sorted_grades)\n",
+    "print(\"Index of the highest grade:\", index_highest)\n",
+    "print(\"Count of students scoring above 90:\", count_above_90)\n",
+    "print(\"Percentage of students scoring above 90:\", percentage_above_90, \"%\")\n",
+    "print(\"Percentage of students scoring below 75:\", percentage_below_75, \"%\")\n",
+    "print(\"High performers (grades > 90):\", high_performers)\n",
+    "print(\"Passing grades (grades > 75):\", passing_grades)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "43ff4b77-1d88-453d-b217-d165ca836398",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(grades.ndim)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "91ab1cef-6045-432f-8dd7-0976e7613477",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(10,)"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(grades.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5622f4b5-1330-4f08-aa08-cc41effc077b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
